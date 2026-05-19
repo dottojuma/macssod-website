@@ -1,0 +1,92 @@
+/* ==========================================================================
+   MACSSOD COLLEGE - CUSTOM ADMIN THEME (CONTRAST & ACCESSIBILITY FIXED)
+   ========================================================================== */
+
+/* 1. BAR YA JUU KABISA (Header) - Navy Blue */
+#header {
+    background: #003366 !important;
+    color: #ffffff !important;
+    padding: 12px 20px !important;
+}
+
+/* Maandishi na Logo ya Bar ya Juu */
+#branding h1, #branding h1 a, #branding h1 a:link, #branding h1 a:visited {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* Links za Kulia Juu za User (Welcome, View Site, Log Out) */
+#user-tools, #user-tools a, #user-tools a:link, #user-tools a:visited {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+#user-tools a:hover {
+    text-decoration: underline !important;
+    color: #e0f0ff !important;
+}
+
+/* 2. BACKGROUND YA DASHBOARD NZIMA - Pale Blue Safi */
+body {
+    background-color: #f4f7fa !important;
+    color: #223344 !important; /* Maandishi ya kawaida yanakuwa meusi/kijivu ya giza sana */
+}
+
+/* 3. VICHWA VYA HABARI VYA MA-BOX (Module Headers) - Bluu ya Kati yenye Herufi Nyeupe */
+.module h2, .module caption, .theme-accent {
+    background: #0056b3 !important; 
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+.module h2 a, .module h2 a:link, .module h2 a:visited {
+    color: #ffffff !important;
+}
+
+/* 4. BAR YA KUSHOTO (Sidebar Navigation) - Background Nyeupe, Maandishi ya Giza */
+#nav-sidebar {
+    background-color: #ffffff !important;
+    border-right: 1px solid #d1dbe5 !important;
+}
+#nav-sidebar th a, #nav-sidebar td a, #nav-sidebar .section a {
+    color: #003366 !important; /* Maandishi ya links upande wa kushoto yanakuwa Navy Blue yataonekana vizuri sana */
+    font-weight: 500 !important;
+}
+#nav-sidebar tr:hover {
+    background-color: #eaf2f8 !important; /* Rangi ya soft ikipitisha mouse */
+}
+
+/* 5. KUREKEBISHA VIFUNGO (Buttons) - Ziwe ndogo, muonekano wa kileo, maandishi meupe juu ya Kijani */
+.button, input[type=submit], input[type=button], .submit-row input, a.addlink {
+    background: #28a745 !important; /* Kijani kibichi */
+    color: #ffffff !important; /* Maandishi Meupe kabisa - yataonekana wazi juu ya kijani */
+    border: none !important;
+    border-radius: 4px !important; /* Mduara kidogo pembeni */
+    padding: 6px 14px !important; /* Tumepunguza unene/ukubwa hapa */
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(40,167,69,0.15);
+    display: inline-block;
+}
+
+/* Vifungo vya kufuta au vya secondary viwe vya Bluu au Kijivu cha Giza badala ya kijani */
+.button.cancel-link, a.deletelink {
+    background: #dc3545 !important; /* Nyekundu kwa vitu vya kufuta */
+    color: #ffffff !important;
+    padding: 6px 14px !important;
+}
+
+.button.default, input[type=submit].default {
+    background: #0056b3 !important; /* Kitufe kikuu cha Save kiwe Bluu iliyokolea */
+}
+
+/* 6. MAANDISHI YA NDANI YA MEZA/JEDWALI (Data Tables Contrast) */
+#result_list th, #result_list th a {
+    background-color: #ebf3f9 !important;
+    color: #003366 !important; /* Vichwa vya safu vya jedwali viwe vya bluu ya giza */
+    font-weight: 600 !important;
+}
+
+#result_list td, #result_list td a {
+    color: #334455 !important; /* Maandishi ya wanafunzi (Majina n.k) yawe ya giza yaonekani kwenye weupe */
+}

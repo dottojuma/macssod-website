@@ -1,7 +1,14 @@
 from django.contrib import admin
 from django.urls import path, include
+# --- IMPORT HIZI MBILI CHINI ---
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('students.urls')), # Tumeongeza njia ya API hapa
+    path('api/', include('students.urls')),
 ]
+
+# --- ONGEZA MSTARI HUU CHINI KABISA ---
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/6.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -120,7 +120,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-CORS_ALLOWED_ORIGINS = [
-         "http://localhost:5173",
-         "http://127.0.0.1:5173",
-     ]
+# Hapa tunaambia Django itafute static files kwenye lile folder la nje
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+# Hapa ni sehemu ambayo collectstatic itakusanya ma-file yote
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
